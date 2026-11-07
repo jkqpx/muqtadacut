@@ -1,0 +1,24 @@
+body:has(.partner-strip){transition:background-color .65s ease,color .65s ease}
+body.film-mode{background:#131415;color:#f4f3ef;--line:#414244}
+.film-mode :is(.home-work,.home-collection) .project-card p{color:#bdbdbb}
+.film-mode .hero-aside p,.film-mode .article-card>p:not(.eyebrow){color:#c6c5c3}
+.film-mode .mini-feature{color:#222}
+.partner-strip{text-align:center;padding:clamp(48px,6vw,88px) 0;border-top:1px solid var(--line)}
+.partner-strip .eyebrow{font-size:10px;letter-spacing:.15em;margin:0 0 24px}
+.partner-window{overflow:hidden;width:min(100%,1100px);margin:auto;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.partner-track{display:flex;width:max-content;animation:partner-left 72s linear infinite;direction:ltr}
+.partner-track ul{list-style:none;display:flex;align-items:center;margin:0;padding:0}
+.partner-track li{width:clamp(110px,12vw,168px);height:68px;display:grid;place-items:center}
+.partner-track li span{display:block;width:min(calc(46px * var(--ratio)),78%);aspect-ratio:var(--ratio);background:currentColor;mask:var(--mark) center/contain no-repeat}
+@keyframes partner-left{to{transform:translateX(-25%)}}
+.partner-window:hover .partner-track,.partner-window:focus-within .partner-track{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){body:has(.partner-strip){transition:none}.partner-track{animation:none;width:100%}.partner-track ul:first-child{flex-wrap:wrap;justify-content:center;width:100%}.partner-track ul[aria-hidden]{display:none}.partner-window{mask:none}}
+
+/* The outline band shares the page canvas through both ends of the film section. */
+body:has(.partner-strip) .marquee-wall{background:transparent}
+.marquee-wall .marquee-track{-webkit-text-stroke-color:var(--outline-ink,#454545);transition:-webkit-text-stroke-color .65s ease}
+body.film-mode{--outline-ink:#d3d3d0;--gray:#aaa}
+.partner-window{touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:grab}
+.partner-window.is-dragging{cursor:grabbing}
+.partner-window.is-dragging .partner-track{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.partner-window{overflow-x:auto;scrollbar-width:thin}.partner-track{width:max-content}.partner-track ul:first-child{flex-wrap:nowrap;width:auto}}
