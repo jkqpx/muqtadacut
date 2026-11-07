@@ -369,6 +369,7 @@ const projects = [
     "note": "Motion graphics · Brand communication",
     "group": 1,
     "url": "https://drive.google.com/file/d/1ANmHsWKjrBS3hllCRyEYZ5OkDSlXiI5-/view?usp=drivesdk",
+    "youtube": "B0ql7l1EZf4",
     "featured": true,
     "hero": false,
     "duration": 16.508333,
