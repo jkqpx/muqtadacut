@@ -10,6 +10,7 @@ body.film-mode{background:#131415;color:#f4f3ef;--line:#414244}
 .partner-track ul{list-style:none;display:flex;align-items:center;margin:0;padding:0}
 .partner-track li{width:clamp(110px,12vw,168px);height:68px;display:grid;place-items:center}
 .partner-track li span{display:block;width:min(calc(46px * var(--ratio)),78%);aspect-ratio:var(--ratio);background:currentColor;mask:var(--mark) center/contain no-repeat}
+.partner-track li .partner-nabawiya{width:92%}
 @keyframes partner-left{to{transform:translateX(-25%)}}
 .partner-window:hover .partner-track,.partner-window:focus-within .partner-track{animation-play-state:paused}
 @media(prefers-reduced-motion:reduce){body:has(.partner-strip){transition:none}.partner-track{animation:none;width:100%}.partner-track ul:first-child{flex-wrap:wrap;justify-content:center;width:100%}.partner-track ul[aria-hidden]{display:none}.partner-window{mask:none}}
