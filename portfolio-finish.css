@@ -49,3 +49,8 @@ body:has(.hero) .topbar{max-width:1300px;top:0;height:54px}
  #drive-player{height:min(68dvh,640px)}
  .topbar nav{max-height:calc(100dvh - 90px);overflow-y:auto}
 }
+
+/* Match the viewing window to portrait films without enlarging their preview unnecessarily. */
+dialog#player.portrait-film{width:min(520px,94vw)}
+dialog#player.portrait-film #drive-player{height:min(78dvh,900px)}
+@media(max-width:700px){dialog#player.portrait-film #drive-player{height:min(72dvh,760px)}}
