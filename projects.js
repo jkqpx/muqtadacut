@@ -678,5 +678,50 @@ const projects = [
     "duration": null,
     "featured": false,
     "hero": false
+  },
+  {
+    "i": 48,
+    "label": "Al-Waseet / ITL Iraq Expo 2026 — Tayba",
+    "youtube": "8bJq4hgtpiI",
+    "duration": 51.04,
+    "cover": "/assets/48.svg",
+    "note": "Commercial film · Editing & color grading",
+    "group": 1,
+    "client": "Al-Waseet",
+    "category": "Commercial",
+    "width": 3840,
+    "height": 2160,
+    "featured": false,
+    "hero": false
+  },
+  {
+    "i": 49,
+    "label": "Al-Waseet / ITL Iraq Expo 2026 — Ali Al-Khaldi",
+    "youtube": "J9RF83WgaZk",
+    "duration": 39.75,
+    "cover": "/assets/49.svg",
+    "note": "Commercial film · Editing & color grading",
+    "group": 1,
+    "client": "Al-Waseet",
+    "category": "Commercial",
+    "width": 3840,
+    "height": 2160,
+    "featured": false,
+    "hero": false
+  },
+  {
+    "i": 50,
+    "label": "Al-Waseet / White Friday",
+    "youtube": "430JEdf12-E",
+    "duration": 47.64,
+    "cover": "/assets/50.svg",
+    "note": "Commercial film · Editing & color grading",
+    "group": 1,
+    "client": "Al-Waseet",
+    "category": "Commercial",
+    "width": 3840,
+    "height": 2160,
+    "featured": false,
+    "hero": false
   }
 ];
